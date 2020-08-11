@@ -12,7 +12,7 @@ parser.add_argument("--experiment_num", type=str, default="0")
 args = parser.parse_args()
 
 if args.experiment_type == "atomic":
-    from main_atomic import main
+    from main_atomic_ckb import main
     main(args.experiment_num)
 if args.experiment_type == "conceptnet":
     from main_conceptnet import main
